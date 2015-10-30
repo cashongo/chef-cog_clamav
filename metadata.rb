@@ -1,7 +1,10 @@
 name             'cog_clamav'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Cash on Go Ltd'
+maintainer_email 'lauri.jesmin@cashongo.co.uk'
 license          'All rights reserved'
 description      'Installs/Configures cog_clamav'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.0'
+version          '0.1.2'
+
+depends 'cron',         '~> 1.6.0'
+depends 'yum-epel',     '~> 0.6.4'
