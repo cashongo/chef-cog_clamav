@@ -71,7 +71,7 @@ end
 cron_d 'cog_clamscan' do
   minute   node['cog_clamav']['scan_minute']
   hour     node['cog_clamav']['scan_hour']
-  command  '/usr/bin/chrt -i 0 /usr/bin/clamscan -ri --no-summary --detect-pua=yes '+noscan+' /'
+  command  '/usr/bin/chrt -i 0 /usr/bin/clamscan -ri --no-summary --detect-pua=yes '+noscan+' / | /usr/bin/logger -t clamscan -p local0.notice 2>&1'
   user     'root'
   mailto    node['cog_clamav']['clamav_reports']
 end
