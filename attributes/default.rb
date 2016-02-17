@@ -19,7 +19,8 @@ default['cog_clamav']['clamav_noscan_for_all']  = [
   '^/var/lib/mysql',
   '^/var/lib/mongodb',
   '^/etc/suricata',
-  '^/root/suricata'
+  '^/root/suricata',
+  '^/var/chef/cache/cookbooks/cog_ips/files/default/suricata'
 ]
 
 default['cog_clamav']['clamav_noscan']          = [
