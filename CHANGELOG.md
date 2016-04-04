@@ -1,3 +1,6 @@
+# 0.2.2
+- send errors from clamscan also to syslog
+
 # 0.2.1
 - Exclude suricata install package from cookbook cache
 
