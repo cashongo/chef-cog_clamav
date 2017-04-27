@@ -1,3 +1,7 @@
+# 0.3.0
+- remove version pins
+- fix berksfile
+
 # 0.2.2
 - send errors from clamscan also to syslog
 
